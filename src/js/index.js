@@ -39,12 +39,20 @@
 
 const $ = (selector) => document.querySelector(selector);
 
+const store = {
+    setLocalStorage(menu) {
+        localStorage.setItem("menu", JSON.stringify(menu));
+    },
+    getLocalStorage() {
+        getLocalStorage.getItem("menu");
+    },
+};
+
 function App() {
 
-    // todo 메뉴 삭제
-    // [O] 메뉴 삭제 버튼 클릭 이벤트를 받고, 메뉴 삭제 컨펌 모달창이 뜬다.
-    // [O] 확인 버튼을 클릭하면 메뉴가 삭제된다.
-    // [] 총 메뉴 갯수를 count 하여 상단에 보여준다.
+    // 상태(변하는 데이터) - 갯수, 메뉴명
+
+    this.menu = [];
 
     const updateMenuCaount = () => {
         const menuCount = $('#espresso-menu-list').querySelectorAll("li").length;
@@ -119,6 +127,28 @@ function App() {
         }
 
         const espressoMenuName = $("#espresso-menu-name").value;
+        this.menu.push({ name: espressoMenuName });
+        const template = this.menu.map((item) => {
+            `
+                <li class="menu-list-item d-flex items-center py-2">
+                <span class="w-100 pl-2 menu-name">${espressoMenuName}</span>
+                <button
+                type="button"
+                class="bg-gray-50 text-gray-500 text-sm mr-1 menu-edit-button"
+                >
+                수정
+                </button>
+                <button
+                type="button"
+                class="bg-gray-50 text-gray-500 text-sm menu-remove-button"
+                >
+                삭제
+                </button>
+                </li>`;
+            })
+            .join("");
+
+
         const menuItemTemplate = (
             espressoMenuName
             ) => {
