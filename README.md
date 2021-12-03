@@ -24,5 +24,28 @@
     <li>[ ] 총 메뉴 갯수를 count 하여 상단에 보여준다.</li>
 </ul>
 
-<hr>
+<h3>todo LocalStorage Read & Write</h3>
+<ul>
+    <li>[ ] localStorage에 데이터를 저장한다.</li>
+    <li>[ ] localStorage에 있는 데이터를 읽어온다.</li>
+</ul>
+
+<h3>todo 메뉴판 관리</h3>
+<ul>
+    <li>[ ] 에스프레소, 프라푸치노, 블랜디드, 티바나, 디저트 메뉴판 관리</li>
+</ul>
+
+<h3>todo 페이지 접근시 최초 데이터 Read & Rendering</h3>
+<ul>
+    <li>[ ] 페이지에 최초로 로딩될 때 LocalStorage 에스프레소 메뉴를 읽어온다.</li>
+    <li>[ ] 에스프레소 메뉴를 페이지에 그려준다.</li>
+</ul>
+
+<h3>todo 품절 상태 관리</h3>
+<ul>
+    <li>[ ] 품절 상태인 경우를 보여줄 수 있게, 품절 버튼을 추가하고 sold-out 클래스를 추가하여 상태를 변경한다.</li>
+    <li>[ ] 품절 버튼을 추가한다.</li>
+    <li>[ ] 품절 버튼을 클릭하면 localStorage에 상태값이 저장된다.</li>
+    <li>[ ] 클릭이벤트에서 가장 가까운 li태그의 class 속성 값에 sold-out을 추가한다.</li>
+</ul>
 
