@@ -2,6 +2,10 @@
 
 <h1>Welcome, Leabucks</h1>
 
+<h3>App Mini Project</h3>
+Project goals : HTML, CSS, JavaScript 를 이용하여 레아벅스 카페 메뉴 앱 프로젝트에 구현한다.
+
+
 <h3>todo 메뉴 추가</h3>
 <ul>
     <li>[ ] 메뉴의 이름을 입력 받고 확인 버튼을 누르면 메뉴가 추가된다.</li>
